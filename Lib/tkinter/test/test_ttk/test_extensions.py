@@ -313,6 +313,7 @@ class OptionMenuTest(AbstractTkTest, unittest.TestCase):
         textvar.trace("w", cb_test)
         optmenu['menu'].invoke(1)
         self.assertEqual(success, [True])
+        optmenu.destroy()
 
 
 class DefaultRootTest(AbstractDefaultRootTest, unittest.TestCase):
